@@ -13,22 +13,13 @@
 
     <button onclick="hienThi()">Bấm vào đây</button>
 
-    <div id="khungNhap" style="display: none;">
-        <br>
+    <div id="khungNhap" style="display:none; margin-top:10px;">
         <input type="text" id="noidung" placeholder="chan tao đi">
-        <button onclick="hienThiChu()">Hiện chữ</button>
     </div>
-
-    <p id="ketqua"></p>
 
     <script>
         function hienThi() {
             document.getElementById("khungNhap").style.display = "block";
-        }
-
-        function hienThiChu() {
-            let noidung = document.getElementById("noidung").value;
-            document.getElementById("ketqua").innerText = noidung;
         }
     </script>
 
