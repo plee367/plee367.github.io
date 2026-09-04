@@ -1,4 +1,3 @@
-<```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,16 +12,17 @@
 
     <button onclick="hienThi()">Bấm vào đây</button>
 
+    <p id="ketqua"></p>
+
     <script>
         function hienThi() {
-            let noidung = prompt("chan tao đi:");
+            let noidung = prompt("Hãy nhập dòng chữ bạn muốn:");
 
-            if (noidung !== null && noidung !== "") {
-                alert(noidung);
+            if (noidung !== null) {
+                document.getElementById("ketqua").innerText = noidung;
             }
         }
     </script>
 
 </body>
 </html>
-```
