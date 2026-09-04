@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,17 +13,25 @@
 
     <button onclick="hienThi()">Bấm vào đây</button>
 
+    <div id="khungNhap" style="display: none;">
+        <br>
+        <input type="text" id="noidung" placeholder="chan tao đi">
+        <button onclick="hienThiChu()">Hiện chữ</button>
+    </div>
+
     <p id="ketqua"></p>
 
     <script>
         function hienThi() {
-            let noidung = prompt("chan tao đi");
+            document.getElementById("khungNhap").style.display = "block";
+        }
 
-            if (noidung !== null) {
-                document.getElementById("ketqua").innerText = noidung;
-            }
+        function hienThiChu() {
+            let noidung = document.getElementById("noidung").value;
+            document.getElementById("ketqua").innerText = noidung;
         }
     </script>
 
 </body>
 </html>
+```
