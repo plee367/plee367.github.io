@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Web của tôi</title>
+    <title>Website của tôi</title>
 </head>
 
 <body>
-    <h1>Xin chào!</h1>
-    <p>Đây là website đầu tiên của tôi.</p>
+
+    <h1>Chào bạn, tôi là Lê Thế Phát</h1>
+
+    <p>Chào mừng bạn đến với website do chính tôi tạo ra</p>
+
+    <button onclick="hienThi()">Bấm vào đây</button>
+
+    <p id="ketqua"></p>
+
+    <script>
+        function hienThi() {
+            let noidung = prompt("chan tao đi:");
+            document.getElementById("ketqua").innerText = noidung;
+        }
+    </script>
+
 </body>
 </html>
