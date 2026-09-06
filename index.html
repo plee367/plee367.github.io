@@ -1,7 +1,46 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Website của tôi</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        p {
+            color: darkgreen;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        #message {
+            color: red;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -10,18 +49,17 @@
 
     <p>Chào mừng bạn đến với website do chính tôi tạo ra</p>
 
-    <button onclick="hienThi()">Bấm vào đây</button>
+    <button onclick="showMessage()">Bấm vào đây</button>
 
-    <div id="khungNoiDung" style="display:none;">
-        chan tao đi
-    </div>
+    <p id="message"></p>
 
     <script>
-        function hienThi() {
-            document.getElementById("khungNoiDung").style.display = "block";
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+            "chan bố m đê";
         }
     </script>
 
 </body>
 </html>
-
+```
